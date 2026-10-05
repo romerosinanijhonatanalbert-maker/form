@@ -1,0 +1,216 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+}
+
+
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4f46e5;
+    background-color: #eef2ff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    color: #374151;
+    margin: 8px 5px 8px 0;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #333;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+}
+
+
+
+input[type="color"] {
+    width: 70px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+
+input[type="radio"] {
+    accent-color: #6366f1;
+    transform: scale(1.2);
+    margin: 8px;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    accent-color: #6366f1;
+    transform: scale(1.2);
+    margin: 8px;
+    cursor: pointer;
+}
+
+
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+
+    background: white;
+    border: 2px dashed #6366f1;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #6366f1;
+    cursor: pointer;
+}
+
+
+button {
+    background: #6366f1;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 25px;
+    margin: 15px 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+
+#mensaje,
+#nota_sumada {
+    background-color: #ecfdf5;
+    color: #047857;
+
+    padding: 15px;
+
+    border-left: 5px solid #10b981;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+
+
+#nota_teorica,
+#nota_practica {
+    width: 48%;
+    display: inline-block;
+}
+
+   
+
+input:hover {
+    border-color: #818cf8;
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #nota_teorica,
+    #nota_practica {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
